@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laptop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    
+<script  defer>
+const temprature=document.getElementById("temprature");
+    const tocelcius=document.getElementById("tocelcius");
+    const tofharanheat=document.getElementById("tofharanheat");
+    const result=document.getElementById("result");
+    let temp;
+    function answer(){
+        if(tocelcius.checked){
+            temp=Number(temprature.value);
+            temp=(temp-32)*5/9;
+            result.innerText=temp+"celcius";
+    
+        }
+        else(tofharanheat.checked){
+            temp=Number(temprature.value);
+            temp=(temp*9/5)+32;
+            result.innerText=temp+"fharanheit";
+            
+        }
+    }</script>
+   
+
+</head>
+<body>
+    <div class="form">
+        <h1>temprature converter</h1>
+        <input type="number" id="temprature">
+        <input type="radio" id="tocelcius">
+        <label>to celcius</label>
+        <input type="radio" id="tofharanheat">
+        <label>to fharaenhiet</label>
+        <button  onclick="answer()">submit</button>
+        <p id="'result"></p>
+    </div>
+    
+    
+
+
+</body>
+</html>

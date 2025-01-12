@@ -1,0 +1,18 @@
+*{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}#root{
+    width: 100vw;
+    height:100vh;
+    align-content: center;
+}
+h1{
+    color:brown;
+/*left:50%;
+right:50%;
+text-align: center;*/
+margin:auto;
+text-align: center;
+cursor:pointer;
+
+}

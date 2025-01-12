@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">
+
+    </h1>
+    <button id="button">click</button>
+    <script>
+        let button=document.getElementById("button");
+        button.addEventListener("click",()=>{
+
+        let a=new Promise(function (myresolve,myreject){
+            myresolve();
+            myreject();
+        });
+a.then(
+   setTimeout(function(){
+    let heading=document.getElementById("heading");
+    heading.innerHTML="hey";},9000) 
+
+    ,
+    function(){
+        console.log("hello");
+
+    }
+);
+});
+    </script>
+</body>
+</html>
